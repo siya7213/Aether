@@ -19,7 +19,7 @@ from gtts import gTTS
 # 0. PAGE CONFIGURATION & DARK THEME
 # ==========================================
 st.set_page_config(
-    page_title="CityPulse | Urban Intelligence Platform",
+    page_title="Aether | Urban Intelligence Platform",
     page_icon="⚡",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -48,7 +48,7 @@ st.markdown("""
 # ==========================================
 # 1. DATABASE MODELS & DYNAMIC MULTI-CITY REGISTRY
 # ==========================================
-DB_PATH = "citypulse.db"
+DB_PATH = "aether.db"
 Base = declarative_base()
 
 class City(Base):
@@ -216,9 +216,9 @@ SUPPORTED_LANGUAGES = {
 }
 
 STATIC_STRINGS = {
-    "en": {"app_title": "CityPulse: Urban Intelligence Platform", "city_selector": "Select City", "language_selector": "Select Language", "tab_explore": "Explore & Hospitality", "tab_heritage": "History & Heritage", "tab_safety": "Safe Navigation", "tab_compare": "City Analytics", "tab_triage": "Citizen Triage", "tab_voice": "Voice Assistant", "tourist_pulse": "Tourist Pulse", "residential_pulse": "Residential Pulse (Verified Locals)", "verified_local_badge": "Verified Resident Local", "simulate_ping": "Simulate 30 Days Pings", "budget_estimator": "Smart Budget Estimator", "safest_route": "Safest Route", "shortest_route": "Shortest Route", "livability_index": "Livability Index Score"},
-    "hi": {"app_title": "सिटीपल्स: शहरी इंटेलिजेंस प्लेटफॉर्म", "city_selector": "शहर चुनें", "language_selector": "भाषा चुनें", "tab_explore": "खोजें और आतिथ्य", "tab_heritage": "इतिहास और विरासत", "tab_safety": "सुरक्षित नेविगेशन", "tab_compare": "शहर विश्लेषण", "tab_triage": "नागरिक रिपोर्ट", "tab_voice": "वॉयस असिस्टेंट", "tourist_pulse": "पर्यटक समीक्षाएं", "residential_pulse": "स्थानीय नागरिक समीक्षाएं (सत्यापित)", "verified_local_badge": "सत्यापित स्थानीय निवासी", "simulate_ping": "30 दिनों का स्थान सिम्यूलेट करें", "budget_estimator": "स्मार्ट बजट अनुमानक", "safest_route": "सबसे सुरक्षित रास्ता", "shortest_route": "सबसे छोटा रास्ता", "livability_index": "रहने योग्य सूचकांक स्कोर"},
-    "mr": {"app_title": "सिटीपल्स: नागरी बुद्धिमत्ता मंच", "city_selector": "शहर निवडा", "language_selector": "भाषा निवडा", "tab_explore": "शोधा आणि आदरातिथ्य", "tab_heritage": "इतिहास आणि वारसा", "tab_safety": "सुरक्षित मार्ग", "tab_compare": "शहर विश्लेषण", "tab_triage": "नागरिक तक्रार", "tab_voice": "व्हॉइस असिस्टंट", "tourist_pulse": "पर्यटक पुनरावलोकने", "residential_pulse": "स्थानिक नागरिक मते (प्रमाणित)", "verified_local_badge": "प्रमाणित स्थानिक रहिवासी", "simulate_ping": "३० दिवसांचे लोकेशन सिम्युलेट करा", "budget_estimator": "स्मार्ट बजेट अंदाजक", "safest_route": "सर्वात सुरक्षित मार्ग", "shortest_route": "सर्वात छोटा मार्ग", "livability_index": "राहणीमान निर्देशांक गुण"}
+    "en": {"app_title": "Aether: Urban Intelligence Platform", "city_selector": "Select City", "language_selector": "Select Language", "tab_explore": "Explore & Hospitality", "tab_heritage": "History & Heritage", "tab_safety": "Safe Navigation", "tab_compare": "City Analytics", "tab_triage": "Citizen Triage", "tab_voice": "Voice Assistant", "tourist_pulse": "Tourist Pulse", "residential_pulse": "Residential Pulse (Verified Locals)", "verified_local_badge": "Verified Resident Local", "simulate_ping": "Simulate 30 Days Pings", "budget_estimator": "Smart Budget Estimator", "safest_route": "Safest Route", "shortest_route": "Shortest Route", "livability_index": "Livability Index Score"},
+    "hi": {"app_title": "एथर: शहरी इंटेलिजेंस प्लेटफॉर्म", "city_selector": "शहर चुनें", "language_selector": "भाषा चुनें", "tab_explore": "खोजें और आतिथ्य", "tab_heritage": "इतिहास और विरासत", "tab_safety": "सुरक्षित नेविगेशन", "tab_compare": "शहर विश्लेषण", "tab_triage": "नागरिक रिपोर्ट", "tab_voice": "वॉयस असिस्टेंट", "tourist_pulse": "पर्यटक समीक्षाएं", "residential_pulse": "स्थानीय नागरिक समीक्षाएं (सत्यापित)", "verified_local_badge": "सत्यापित स्थानीय निवासी", "simulate_ping": "30 दिनों का स्थान सिम्यूलेट करें", "budget_estimator": "स्मार्ट बजट अनुमानक", "safest_route": "सबसे सुरक्षित रास्ता", "shortest_route": "सबसे छोटा रास्ता", "livability_index": "रहने योग्य सूचकांक स्कोर"},
+    "mr": {"app_title": "एथर: नागरी बुद्धिमत्ता मंच", "city_selector": "शहर निवडा", "language_selector": "भाषा निवडा", "tab_explore": "शोधा आणि आदरातिथ्य", "tab_heritage": "इतिहास आणि वारसा", "tab_safety": "सुरक्षित मार्ग", "tab_compare": "शहर विश्लेषण", "tab_triage": "नागरिक तक्रार", "tab_voice": "व्हॉइस असिस्टंट", "tourist_pulse": "पर्यटक पुनरावलोकने", "residential_pulse": "स्थानिक नागरिक मते (प्रमाणित)", "verified_local_badge": "प्रमाणित स्थानिक रहिवासी", "simulate_ping": "३० दिवसांचे लोकेशन सिम्युलेट करा", "budget_estimator": "स्मार्ट बजेट अंदाजक", "safest_route": "सर्वात सुरक्षित मार्ग", "shortest_route": "सर्वात छोटा मार्ग", "livability_index": "राहणीमान निर्देशांक गुण"}
 }
 
 def t(key):
@@ -322,7 +322,7 @@ st.markdown('<div class="header-card">', unsafe_allow_html=True)
 col_h1, col_h2, col_h3 = st.columns([2, 1, 1])
 
 with col_h1:
-    st.title("⚡ CityPulse")
+    st.title("⚡ Aether")
     st.caption("Smart City Exploration & Intelligence Platform for India")
 
 with col_h2:
