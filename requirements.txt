@@ -1,0 +1,9 @@
+streamlit==1.38.0
+sqlalchemy==2.0.35
+haversine==2.8.1
+scikit-learn==1.5.2
+deep-translator==1.11.4
+gTTS==2.5.3
+pydeck==0.9.1
+pandas==2.2.3
+numpy==1.26.4
